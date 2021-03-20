@@ -4,7 +4,7 @@ type work func(...int) int
 
 type Scheduler struct{}
 
-func New() *Scheduler {
+func NewScheduler() *Scheduler {
 	return &Scheduler{}
 }
 

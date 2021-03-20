@@ -6,7 +6,7 @@ import (
 )
 
 func TestScheduler_should_lazily_take_a_function_and_arguments(t *testing.T) {
-	s := New()
+	s := NewScheduler()
 
 	f := func(...int) int {
 		t.Fatalf("Scheduler is not lazy")
